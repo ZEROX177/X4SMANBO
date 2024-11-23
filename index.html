@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ClassTrack</h1>
+    <nav>
+      <a href="#attendance">Kehadiran</a>
+      <a href="#schedule">Jadwal</a>
+      <a href="#tasks">Tugas</a>
+      <a href="#vision">Visi/Misi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="attendance">
+      <h2>Pelacakan Kehadiran</h2>
+      <table id="attendance-table">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>ID</th>
+            <th>Kehadiran</th>
+            <th>Ketidakhadiran</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data siswa akan dimuat di sini -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="schedule">
+      <h2>Jadwal Mingguan</h2>
+      <div id="schedule-container">
+        <!-- Jadwal akan dimuat di sini -->
+      </div>
+    </section>
+
+    <section id="tasks">
+      <h2>Daftar Tugas</h2>
+      <ul id="task-list">
+        <!-- Tugas akan dimuat di sini -->
+      </ul>
+    </section>
+
+    <section id="vision">
+      <h2>Visi dan Misi Kelas</h2>
+      <p>
+        "Menciptakan generasi yang unggul, berintegritas, dan berdedikasi dalam segala aspek kehidupan."
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+// jadwal pelajaran //
+</html>
+<form id="schedule-form">
+  <h3>Tambah Jadwal</h3>
+  <input type="text" id="day" placeholder="Hari" required>
+  <input type="text" id="subject" placeholder="Mata Pelajaran" required>
+  <input type="text" id="time" placeholder="Waktu" required>
+  <button type="submit">Tambah</button>
+</form>
+
+<div id="schedule-list">
+  <h3>Jadwal Mingguan</h3>
+  <ul></ul>
+</div>

@@ -1,0 +1,13 @@
+project/
+├── public/        # File frontend
+│   ├── index.html
+│   ├── style.css
+│   └── app.js     # JavaScript untuk interaksi frontend
+├── routes/        # Rute API backend
+│   ├── auth.js    # Rute untuk login
+│   └── attendance.js # Rute untuk kehadiran
+├── models/        # Model database
+│   ├── User.js
+│   └── Attendance.js
+├── server.js      # File utama backend
+└── package.json   # File konfigurasi npm
