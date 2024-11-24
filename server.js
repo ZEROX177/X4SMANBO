@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
 const port = 3000;
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/auth/auth.js');
 app.use('/auth', authRoutes.router);
 
 // Middleware
